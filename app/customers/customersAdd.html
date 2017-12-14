@@ -1,0 +1,61 @@
+
+<form>
+    
+  <div class="form-row">
+      
+    <div class="form-group col-md-6">
+      <label >Nom</label>
+      <input type="Name" class="form-control" ng-model="customer.name" placeholder="Nom">
+    </div>
+      
+    <div class="form-group col-md-6">
+      <label >Email</label>
+      <input type="email" class="form-control" ng-model="customer.email" placeholder="Email">
+    </div>
+      
+    <div class="form-group col-md-6">
+      <label >Age</label>
+      <input type="Number" class="form-control" ng-model="customer.age" placeholder="Age" max="90" min="17">
+    </div>
+      
+    <div class="form-group col-md-6">
+      <label >Compagnie</label>
+      <input type="Name" class="form-control" ng-model="customer.company" placeholder="Email">
+    </div>
+      
+  </div>
+    
+  <div class="form-group">
+    <label>Adresse</label>
+    <input type="text" class="form-control"  ng-model="customer.address"  placeholder="Adresse">
+  </div>
+    
+  <div class="form-group">
+    <label >A Propos</label>
+    <input type="text" class="form-control"  ng-model="customer.about"  placeholder="A propos">
+  </div>
+    
+  <div class="form-row">
+      
+    <div class="form-group col-md-6">
+      <label >Téléhone</label>
+      <input type="text" class="form-control"  ng-model="customer.phone" >
+    </div>
+      
+    <div class="form-group col-md-4">
+      <label for="inputState">Civilité</label>
+      <select ng-model="customer.gender" class="form-control">
+        <option selected>Female</option>
+        <option>Male</option>
+      </select>
+    </div>
+      
+    <div class="form-group col-md-2">
+      <label >Couleur de yeux</label>
+      <input type="text" class="form-control" id="inputZip"  ng-model="customer.eyeColor">
+    </div>
+      
+  </div>
+  
+  <button ng-click="newcustomer(customer)" class="btn btn-success">Valider</button>
+</form>
